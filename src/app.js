@@ -5,6 +5,8 @@ const geocode = require('../src/utils/geocode')
 const forecast = require('../src/utils/forecast')
 
 const app = express()
+//On Heroku it provides dynamic port
+const port = process.env.PORT || 3000
 
 /** Define paths for Express Config */
 //Serve the folder
@@ -99,6 +101,6 @@ app.get('*', (req, res) => {
 })
 
 // Start the server
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port '+ port)
 })
