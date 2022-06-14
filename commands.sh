@@ -23,3 +23,7 @@ https://komma-weather-application.herokuapp.com/ | https://git.heroku.com/komma-
 
 > Push all the code to heroku
 indu.admin@Anils-MBP web-server % git push heroku main 
+
+
+> Run local server
+nodemon src/app.js -e js,hbs
